@@ -1,0 +1,230 @@
+2020-05-23 12:58:58,182 - INFO: training code for the params:
+{
+    "data_path": "/mnt/blossom/data/kgoyal/repos/graphsearch/product_graph_approach/data/clevr_0.0.pkl",
+    "dataset": "clevr",
+    "logfile": "/mnt/blossom/data/kgoyal/repos/graphsearch/product_graph_approach/logs/clevr_noise_0.0.log",
+    "name": "clevr_0.0",
+    "num_queries": 50,
+    "num_queries_train": 10,
+    "num_queries_eval": 10,
+    "num_walks": 15,
+    "max_length_walk": 15,
+    "delta": 0.1,
+    "epochs": 1000,
+    "early_stopping": 10,
+    "seed": 0,
+    "restart_prob": 0.0,
+    "nlayer1": 5,
+    "nlayer2": 5,
+    "elayer1": 5,
+    "elayer2": 5,
+    "nelayer1": 10,
+    "nelayer2": 10,
+    "dropout": 1.0,
+    "one_hot": false,
+    "sparse_walk": true,
+    "walk_method": "random",
+    "num_threads": 1
+}
+2020-05-23 16:17:41,981 - INFO: embeddings: found=0, not found=0
+2020-05-23 16:17:42,058 - WARNING: From /mnt/blossom/data/kgoyal/repos/graphsearch/product_graph_approach/model.py:25: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2020-05-23 16:17:42,107 - WARNING: 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2020-05-23 16:17:42,774 - WARNING: From /mnt/blossom/more/kgoyal/repos/graphsearch/venv/lib/python3.6/site-packages/tensorflow_core/contrib/layers/python/layers/layers.py:1866: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+2020-05-23 16:17:43,083 - WARNING: From /mnt/blossom/data/kgoyal/repos/graphsearch/product_graph_approach/model.py:79: The name tf.sparse.placeholder is deprecated. Please use tf.compat.v1.sparse.placeholder instead.
+
+2020-05-23 16:17:43,128 - WARNING: From /mnt/blossom/data/kgoyal/repos/graphsearch/product_graph_approach/model.py:95: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+2020-05-23 16:17:43,129 - WARNING: From /mnt/blossom/data/kgoyal/repos/graphsearch/product_graph_approach/model.py:95: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+2020-05-23 16:17:43,129 - WARNING: From /mnt/blossom/data/kgoyal/repos/graphsearch/product_graph_approach/model.py:97: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2020-05-23 16:17:44,123 - WARNING: From /mnt/blossom/data/kgoyal/repos/graphsearch/product_graph_approach/model.py:103: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2020-05-23 16:17:44,171 - WARNING: From /mnt/blossom/data/kgoyal/repos/graphsearch/product_graph_approach/model.py:104: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2020-05-23 16:17:55,229 - WARNING: From /mnt/blossom/data/kgoyal/repos/graphsearch/product_graph_approach/train.py:273: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-05-23 16:17:55,238 - WARNING: From /mnt/blossom/data/kgoyal/repos/graphsearch/product_graph_approach/train.py:273: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-05-23 16:17:56,499 - WARNING: From /mnt/blossom/data/kgoyal/repos/graphsearch/product_graph_approach/train.py:274: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2020-05-23 16:37:51,361 - INFO: epoch:	0,		val mean loss: 992.99365,		val mean average precision: 0.28453,		val mean reciprocal rank: 0.37801,		train mean loss: 997.37604,		train mean average precision: 0.26802,		train mean reciprocal rank: 0.33442,		time: 1187.60
+2020-05-23 16:55:46,330 - INFO: epoch:	1,		val mean loss: 989.06891,		val mean average precision: 0.29791,		val mean reciprocal rank: 0.40399,		train mean loss: 993.07635,		train mean average precision: 0.29115,		train mean reciprocal rank: 0.37618,		time: 1074.95
+2020-05-23 17:13:48,073 - INFO: epoch:	2,		val mean loss: 984.33423,		val mean average precision: 0.30793,		val mean reciprocal rank: 0.42419,		train mean loss: 989.22180,		train mean average precision: 0.30208,		train mean reciprocal rank: 0.38385,		time: 1081.73
+2020-05-23 17:31:02,865 - INFO: epoch:	3,		val mean loss: 977.99158,		val mean average precision: 0.31234,		val mean reciprocal rank: 0.41043,		train mean loss: 984.22345,		train mean average precision: 0.30817,		train mean reciprocal rank: 0.39214,		time: 1034.79
+2020-05-23 17:53:56,578 - INFO: epoch:	4,		val mean loss: 969.17157,		val mean average precision: 0.31638,		val mean reciprocal rank: 0.42663,		train mean loss: 977.33545,		train mean average precision: 0.31004,		train mean reciprocal rank: 0.39068,		time: 1373.71
+2020-05-23 18:20:55,838 - INFO: epoch:	5,		val mean loss: 957.35162,		val mean average precision: 0.31912,		val mean reciprocal rank: 0.42994,		train mean loss: 967.72870,		train mean average precision: 0.31474,		train mean reciprocal rank: 0.41071,		time: 1619.26
+2020-05-23 18:44:39,638 - INFO: epoch:	6,		val mean loss: 945.05865,		val mean average precision: 0.33186,		val mean reciprocal rank: 0.45714,		train mean loss: 956.42920,		train mean average precision: 0.32065,		train mean reciprocal rank: 0.39394,		time: 1423.80
+2020-05-23 19:07:26,155 - INFO: epoch:	7,		val mean loss: 933.34570,		val mean average precision: 0.34582,		val mean reciprocal rank: 0.45114,		train mean loss: 944.93195,		train mean average precision: 0.33548,		train mean reciprocal rank: 0.42648,		time: 1366.51
+2020-05-23 19:22:25,789 - INFO: epoch:	8,		val mean loss: 922.52264,		val mean average precision: 0.36248,		val mean reciprocal rank: 0.47661,		train mean loss: 934.08679,		train mean average precision: 0.35310,		train mean reciprocal rank: 0.48479,		time: 899.63
+2020-05-23 19:38:39,064 - INFO: epoch:	9,		val mean loss: 913.20276,		val mean average precision: 0.37753,		val mean reciprocal rank: 0.50191,		train mean loss: 924.01990,		train mean average precision: 0.37028,		train mean reciprocal rank: 0.51779,		time: 973.27
+2020-05-23 19:56:55,322 - INFO: epoch:	10,		val mean loss: 905.38538,		val mean average precision: 0.39199,		val mean reciprocal rank: 0.54539,		train mean loss: 915.93604,		train mean average precision: 0.38184,		train mean reciprocal rank: 0.54679,		time: 1096.26
+2020-05-23 20:15:42,618 - INFO: epoch:	11,		val mean loss: 898.52307,		val mean average precision: 0.40430,		val mean reciprocal rank: 0.55576,		train mean loss: 908.72211,		train mean average precision: 0.39158,		train mean reciprocal rank: 0.54600,		time: 1127.29
+2020-05-23 20:33:43,314 - INFO: epoch:	12,		val mean loss: 892.42975,		val mean average precision: 0.41371,		val mean reciprocal rank: 0.54916,		train mean loss: 901.74353,		train mean average precision: 0.40323,		train mean reciprocal rank: 0.54093,		time: 1080.69
+2020-05-23 20:50:39,716 - INFO: epoch:	13,		val mean loss: 887.27167,		val mean average precision: 0.42555,		val mean reciprocal rank: 0.59499,		train mean loss: 895.26050,		train mean average precision: 0.41669,		train mean reciprocal rank: 0.57024,		time: 1016.39f
+2020-05-23 21:07:57,527 - INFO: epoch:	14,		val mean loss: 882.30194,		val mean average precision: 0.43485,		val mean reciprocal rank: 0.60286,		train mean loss: 890.27380,		train mean average precision: 0.42503,		train mean reciprocal rank: 0.58948,		time: 1037.79
+2020-05-23 21:23:11,128 - INFO: epoch:	15,		val mean loss: 876.45862,		val mean average precision: 0.44721,		val mean reciprocal rank: 0.60887,		train mean loss: 884.02368,		train mean average precision: 0.43586,		train mean reciprocal rank: 0.58894,		time: 913.59
+2020-05-23 21:36:39,382 - INFO: epoch:	16,		val mean loss: 871.39813,		val mean average precision: 0.45716,		val mean reciprocal rank: 0.64611,		train mean loss: 878.00861,		train mean average precision: 0.44735,		train mean reciprocal rank: 0.60721,		time: 808.25
+2020-05-23 21:50:30,556 - INFO: epoch:	17,		val mean loss: 866.75391,		val mean average precision: 0.46617,		val mean reciprocal rank: 0.65852,		train mean loss: 872.91467,		train mean average precision: 0.45843,		train mean reciprocal rank: 0.63210,		time: 831.17
+2020-05-23 22:03:24,338 - INFO: epoch:	18,		val mean loss: 862.81757,		val mean average precision: 0.47370,		val mean reciprocal rank: 0.67774,		train mean loss: 868.54828,		train mean average precision: 0.46726,		train mean reciprocal rank: 0.65301,		time: 773.78
+2020-05-23 22:16:24,432 - INFO: epoch:	19,		val mean loss: 859.17694,		val mean average precision: 0.48226,		val mean reciprocal rank: 0.70650,		train mean loss: 864.63788,		train mean average precision: 0.47524,		train mean reciprocal rank: 0.67358,		time: 780.09
+2020-05-23 22:31:58,740 - INFO: epoch:	20,		val mean loss: 855.61414,		val mean average precision: 0.48944,		val mean reciprocal rank: 0.71711,		train mean loss: 860.92133,		train mean average precision: 0.48230,		train mean reciprocal rank: 0.66232,		time: 934.30
+2020-05-23 22:46:52,730 - INFO: epoch:	21,		val mean loss: 852.29065,		val mean average precision: 0.49455,		val mean reciprocal rank: 0.70376,		train mean loss: 857.07172,		train mean average precision: 0.48830,		train mean reciprocal rank: 0.67637,		time: 884.25
+2020-05-23 23:02:40,556 - INFO: epoch:	22,		val mean loss: 848.91974,		val mean average precision: 0.50242,		val mean reciprocal rank: 0.70067,		train mean loss: 853.60901,		train mean average precision: 0.49422,		train mean reciprocal rank: 0.67006,		time: 947.82
+2020-05-23 23:17:48,069 - INFO: epoch:	23,		val mean loss: 845.72107,		val mean average precision: 0.51088,		val mean reciprocal rank: 0.71398,		train mean loss: 850.33032,		train mean average precision: 0.50203,		train mean reciprocal rank: 0.67833,		time: 907.50
+2020-05-23 23:30:27,071 - INFO: epoch:	24,		val mean loss: 842.48352,		val mean average precision: 0.51990,		val mean reciprocal rank: 0.73101,		train mean loss: 847.18219,		train mean average precision: 0.50914,		train mean reciprocal rank: 0.69256,		time: 758.99
+2020-05-23 23:44:09,049 - INFO: epoch:	25,		val mean loss: 839.56873,		val mean average precision: 0.52405,		val mean reciprocal rank: 0.72083,		train mean loss: 844.10889,		train mean average precision: 0.51487,		train mean reciprocal rank: 0.69486,		time: 821.96
+2020-05-23 23:58:49,445 - INFO: epoch:	26,		val mean loss: 836.94604,		val mean average precision: 0.53007,		val mean reciprocal rank: 0.73650,		train mean loss: 841.21802,		train mean average precision: 0.52216,		train mean reciprocal rank: 0.71717,		time: 880.37
+2020-05-24 00:14:01,019 - INFO: epoch:	27,		val mean loss: 834.36780,		val mean average precision: 0.53539,		val mean reciprocal rank: 0.73700,		train mean loss: 838.51263,		train mean average precision: 0.52607,		train mean reciprocal rank: 0.73133,		time: 911.55
+2020-05-24 00:27:13,268 - INFO: epoch:	28,		val mean loss: 832.22211,		val mean average precision: 0.53979,		val mean reciprocal rank: 0.74939,		train mean loss: 835.85016,		train mean average precision: 0.53129,		train mean reciprocal rank: 0.75633,		time: 792.24
+2020-05-24 00:39:38,888 - INFO: epoch:	29,		val mean loss: 830.35516,		val mean average precision: 0.54396,		val mean reciprocal rank: 0.74522,		train mean loss: 833.57397,		train mean average precision: 0.53564,		train mean reciprocal rank: 0.76000,		time: 745.61
+2020-05-24 00:54:55,936 - INFO: epoch:	30,		val mean loss: 828.28937,		val mean average precision: 0.54833,		val mean reciprocal rank: 0.74586,		train mean loss: 831.55811,		train mean average precision: 0.53836,		train mean reciprocal rank: 0.76400,		time: 917.05
+2020-05-24 01:08:18,648 - INFO: epoch:	31,		val mean loss: 826.21088,		val mean average precision: 0.55415,		val mean reciprocal rank: 0.73633,		train mean loss: 829.59656,		train mean average precision: 0.54221,		train mean reciprocal rank: 0.75917,		time: 802.71
+2020-05-24 01:19:30,309 - INFO: epoch:	32,		val mean loss: 824.42261,		val mean average precision: 0.55981,		val mean reciprocal rank: 0.73533,		train mean loss: 827.41034,		train mean average precision: 0.54854,		train mean reciprocal rank: 0.78250,		time: 671.66
+2020-05-24 01:27:24,415 - INFO: epoch:	33,		val mean loss: 822.52820,		val mean average precision: 0.56439,		val mean reciprocal rank: 0.73633,		train mean loss: 825.58179,		train mean average precision: 0.55241,		train mean reciprocal rank: 0.79083,		time: 474.10
+2020-05-24 01:33:38,498 - INFO: epoch:	34,		val mean loss: 820.40021,		val mean average precision: 0.56979,		val mean reciprocal rank: 0.73700,		train mean loss: 823.69861,		train mean average precision: 0.55524,		train mean reciprocal rank: 0.78917,		time: 374.08
+2020-05-24 01:43:46,071 - INFO: epoch:	35,		val mean loss: 818.69751,		val mean average precision: 0.57253,		val mean reciprocal rank: 0.75133,		train mean loss: 821.49384,		train mean average precision: 0.55932,		train mean reciprocal rank: 0.79286,		time: 607.56
+2020-05-24 01:57:06,522 - INFO: epoch:	36,		val mean loss: 816.58984,		val mean average precision: 0.58007,		val mean reciprocal rank: 0.77367,		train mean loss: 819.89526,		train mean average precision: 0.56309,		train mean reciprocal rank: 0.80619,		time: 800.43
+2020-05-24 02:09:47,702 - INFO: epoch:	37,		val mean loss: 814.75165,		val mean average precision: 0.58381,		val mean reciprocal rank: 0.77233,		train mean loss: 817.62506,		train mean average precision: 0.56817,		train mean reciprocal rank: 0.82667,		time: 761.16
+2020-05-24 02:18:37,121 - INFO: epoch:	38,		val mean loss: 812.70221,		val mean average precision: 0.58852,		val mean reciprocal rank: 0.78900,		train mean loss: 815.70538,		train mean average precision: 0.57316,		train mean reciprocal rank: 0.82667,		time: 529.41
+2020-05-24 02:26:45,181 - INFO: epoch:	39,		val mean loss: 810.57831,		val mean average precision: 0.59548,		val mean reciprocal rank: 0.80900,		train mean loss: 813.55017,		train mean average precision: 0.57874,		train mean reciprocal rank: 0.84000,		time: 488.06
+2020-05-24 02:38:05,965 - INFO: epoch:	40,		val mean loss: 808.08752,		val mean average precision: 0.60218,		val mean reciprocal rank: 0.79733,		train mean loss: 811.10565,		train mean average precision: 0.58693,		train mean reciprocal rank: 0.85333,		time: 680.78
+2020-05-24 02:49:56,146 - INFO: epoch:	41,		val mean loss: 805.25610,		val mean average precision: 0.61044,		val mean reciprocal rank: 0.81567,		train mean loss: 808.16016,		train mean average precision: 0.59733,		train mean reciprocal rank: 0.84333,		time: 710.17
+2020-05-24 03:00:57,776 - INFO: epoch:	42,		val mean loss: 802.69446,		val mean average precision: 0.61818,		val mean reciprocal rank: 0.82900,		train mean loss: 805.39185,		train mean average precision: 0.60524,		train mean reciprocal rank: 0.84333,		time: 661.63
+2020-05-24 03:07:58,441 - INFO: epoch:	43,		val mean loss: 799.78271,		val mean average precision: 0.62747,		val mean reciprocal rank: 0.83067,		train mean loss: 802.81165,		train mean average precision: 0.61499,		train mean reciprocal rank: 0.85400,		time: 420.66
+2020-05-24 03:14:32,126 - INFO: epoch:	44,		val mean loss: 796.97192,		val mean average precision: 0.63523,		val mean reciprocal rank: 0.82067,		train mean loss: 800.00690,		train mean average precision: 0.62461,		train mean reciprocal rank: 0.86500,		time: 393.68
+2020-05-24 03:22:50,195 - INFO: epoch:	45,		val mean loss: 794.80463,		val mean average precision: 0.64404,		val mean reciprocal rank: 0.83733,		train mean loss: 797.63257,		train mean average precision: 0.63487,		train mean reciprocal rank: 0.88000,		time: 498.07
+2020-05-24 03:33:37,404 - INFO: epoch:	46,		val mean loss: 791.84625,		val mean average precision: 0.65434,		val mean reciprocal rank: 0.85400,		train mean loss: 794.93311,		train mean average precision: 0.64480,		train mean reciprocal rank: 0.89000,		time: 647.21
+2020-05-24 03:43:55,300 - INFO: epoch:	47,		val mean loss: 789.40253,		val mean average precision: 0.66261,		val mean reciprocal rank: 0.86733,		train mean loss: 792.40515,		train mean average precision: 0.65145,		train mean reciprocal rank: 0.89333,		time: 617.89
+2020-05-24 03:54:04,195 - INFO: epoch:	48,		val mean loss: 786.42853,		val mean average precision: 0.67252,		val mean reciprocal rank: 0.87833,		train mean loss: 789.74243,		train mean average precision: 0.66104,		train mean reciprocal rank: 0.89333,		time: 608.89
+2020-05-24 04:01:18,656 - INFO: epoch:	49,		val mean loss: 783.62799,		val mean average precision: 0.68296,		val mean reciprocal rank: 0.88833,		train mean loss: 786.85516,		train mean average precision: 0.67126,		train mean reciprocal rank: 0.90333,		time: 434.45
+2020-05-24 04:08:09,874 - INFO: epoch:	50,		val mean loss: 780.26245,		val mean average precision: 0.69473,		val mean reciprocal rank: 0.90333,		train mean loss: 784.01538,		train mean average precision: 0.68120,		train mean reciprocal rank: 0.90667,		time: 411.22
+2020-05-24 04:17:09,151 - INFO: epoch:	51,		val mean loss: 777.05109,		val mean average precision: 0.70527,		val mean reciprocal rank: 0.90333,		train mean loss: 780.67993,		train mean average precision: 0.69321,		train mean reciprocal rank: 0.91667,		time: 539.27
+2020-05-24 04:25:47,920 - INFO: epoch:	52,		val mean loss: 773.85864,		val mean average precision: 0.72048,		val mean reciprocal rank: 0.92333,		train mean loss: 777.58960,		train mean average precision: 0.70572,		train mean reciprocal rank: 0.92667,		time: 518.76
+2020-05-24 04:34:58,698 - INFO: epoch:	53,		val mean loss: 770.46649,		val mean average precision: 0.73267,		val mean reciprocal rank: 0.91333,		train mean loss: 774.30103,		train mean average precision: 0.71636,		train mean reciprocal rank: 0.94000,		time: 550.78
+2020-05-24 04:43:41,306 - INFO: epoch:	54,		val mean loss: 767.22467,		val mean average precision: 0.74282,		val mean reciprocal rank: 0.91333,		train mean loss: 771.34320,		train mean average precision: 0.72753,		train mean reciprocal rank: 0.95000,		time: 522.60
+2020-05-24 04:52:26,497 - INFO: epoch:	55,		val mean loss: 764.27673,		val mean average precision: 0.75588,		val mean reciprocal rank: 0.95000,		train mean loss: 768.13287,		train mean average precision: 0.73881,		train mean reciprocal rank: 0.94000,		time: 525.19
+2020-05-24 04:59:03,724 - INFO: epoch:	56,		val mean loss: 761.08966,		val mean average precision: 0.76892,		val mean reciprocal rank: 0.95000,		train mean loss: 764.95874,		train mean average precision: 0.74872,		train mean reciprocal rank: 0.94000,		time: 397.22
+2020-05-24 05:05:27,420 - INFO: epoch:	57,		val mean loss: 758.81946,		val mean average precision: 0.77447,		val mean reciprocal rank: 0.95000,		train mean loss: 763.12732,		train mean average precision: 0.75546,		train mean reciprocal rank: 0.96000,		time: 383.69
+2020-05-24 05:12:02,750 - INFO: epoch:	58,		val mean loss: 756.25592,		val mean average precision: 0.78224,		val mean reciprocal rank: 0.95000,		train mean loss: 761.05084,		train mean average precision: 0.76088,		train mean reciprocal rank: 0.96000,		time: 395.32
+2020-05-24 05:21:01,070 - INFO: epoch:	59,		val mean loss: 753.41187,		val mean average precision: 0.79117,		val mean reciprocal rank: 0.95000,		train mean loss: 757.45721,		train mean average precision: 0.77319,		train mean reciprocal rank: 0.97000,		time: 538.32
+2020-05-24 05:30:00,635 - INFO: epoch:	60,		val mean loss: 752.56226,		val mean average precision: 0.78993,		val mean reciprocal rank: 0.94000,		train mean loss: 755.77374,		train mean average precision: 0.77929,		train mean reciprocal rank: 0.98000,		time: 539.56
+2020-05-24 05:40:02,136 - INFO: epoch:	61,		val mean loss: 749.78107,		val mean average precision: 0.80148,		val mean reciprocal rank: 0.96000,		train mean loss: 754.08600,		train mean average precision: 0.78579,		train mean reciprocal rank: 0.98000,		time: 601.50
+2020-05-24 05:48:28,266 - INFO: epoch:	62,		val mean loss: 747.23163,		val mean average precision: 0.81170,		val mean reciprocal rank: 0.96000,		train mean loss: 751.73639,		train mean average precision: 0.79352,		train mean reciprocal rank: 0.98000,		time: 506.11
+2020-05-24 05:55:01,080 - INFO: epoch:	63,		val mean loss: 744.77338,		val mean average precision: 0.82096,		val mean reciprocal rank: 0.96000,		train mean loss: 749.04517,		train mean average precision: 0.80412,		train mean reciprocal rank: 0.98000,		time: 392.81
+2020-05-24 06:01:57,837 - INFO: epoch:	64,		val mean loss: 742.99310,		val mean average precision: 0.82479,		val mean reciprocal rank: 0.95000,		train mean loss: 747.58008,		train mean average precision: 0.81073,		train mean reciprocal rank: 0.99000,		time: 416.75
+2020-05-24 06:10:56,109 - INFO: epoch:	65,		val mean loss: 740.96265,		val mean average precision: 0.83405,		val mean reciprocal rank: 0.95000,		train mean loss: 744.60907,		train mean average precision: 0.82065,		train mean reciprocal rank: 0.99000,		time: 538.27
+2020-05-24 06:20:31,753 - INFO: epoch:	66,		val mean loss: 741.72571,		val mean average precision: 0.82527,		val mean reciprocal rank: 0.94000,		train mean loss: 743.56305,		train mean average precision: 0.82387,		train mean reciprocal rank: 0.98000,		time: 575.64
+2020-05-24 06:29:22,641 - INFO: epoch:	67,		val mean loss: 736.58649,		val mean average precision: 0.85060,		val mean reciprocal rank: 0.95000,		train mean loss: 742.33368,		train mean average precision: 0.82916,		train mean reciprocal rank: 0.99000,		time: 530.89
+2020-05-24 06:37:48,118 - INFO: epoch:	68,		val mean loss: 736.37311,		val mean average precision: 0.85158,		val mean reciprocal rank: 0.95000,		train mean loss: 739.27252,		train mean average precision: 0.84065,		train mean reciprocal rank: 0.98000,		time: 505.48
+2020-05-24 06:44:19,492 - INFO: epoch:	69,		val mean loss: 737.70197,		val mean average precision: 0.84292,		val mean reciprocal rank: 0.95000,		train mean loss: 738.23651,		train mean average precision: 0.84461,		train mean reciprocal rank: 0.98000,		time: 391.37
+2020-05-24 06:50:49,442 - INFO: epoch:	70,		val mean loss: 731.24249,		val mean average precision: 0.87196,		val mean reciprocal rank: 0.95000,		train mean loss: 736.30408,		train mean average precision: 0.85285,		train mean reciprocal rank: 0.98000,		time: 389.95
+2020-05-24 06:57:37,987 - INFO: epoch:	71,		val mean loss: 732.44000,		val mean average precision: 0.86658,		val mean reciprocal rank: 0.94000,		train mean loss: 734.33783,		train mean average precision: 0.86133,		train mean reciprocal rank: 0.98000,		time: 408.54
+2020-05-24 07:05:27,177 - INFO: epoch:	72,		val mean loss: 731.29681,		val mean average precision: 0.87041,		val mean reciprocal rank: 0.94000,		train mean loss: 733.39117,		train mean average precision: 0.86524,		train mean reciprocal rank: 0.98000,		time: 469.19
+2020-05-24 07:13:17,423 - INFO: epoch:	73,		val mean loss: 726.59283,		val mean average precision: 0.88993,		val mean reciprocal rank: 0.95000,		train mean loss: 730.84229,		train mean average precision: 0.87644,		train mean reciprocal rank: 0.98000,		time: 470.24
+2020-05-24 07:20:58,063 - INFO: epoch:	74,		val mean loss: 725.03772,		val mean average precision: 0.89433,		val mean reciprocal rank: 0.94000,		train mean loss: 729.35797,		train mean average precision: 0.88114,		train mean reciprocal rank: 0.99000,		time: 460.63
+2020-05-24 07:28:15,167 - INFO: epoch:	75,		val mean loss: 722.99841,		val mean average precision: 0.90521,		val mean reciprocal rank: 0.95000,		train mean loss: 727.04706,		train mean average precision: 0.89034,		train mean reciprocal rank: 0.99000,		time: 437.10
+2020-05-24 07:33:56,003 - INFO: epoch:	76,		val mean loss: 721.47040,		val mean average precision: 0.90835,		val mean reciprocal rank: 0.95000,		train mean loss: 725.31970,		train mean average precision: 0.89864,		train mean reciprocal rank: 0.99000,		time: 340.83
+2020-05-24 07:39:24,230 - INFO: epoch:	77,		val mean loss: 720.37225,		val mean average precision: 0.91344,		val mean reciprocal rank: 0.97000,		train mean loss: 724.09497,		train mean average precision: 0.90312,		train mean reciprocal rank: 0.99000,		time: 328.23
+2020-05-24 07:45:07,357 - INFO: epoch:	78,		val mean loss: 719.79419,		val mean average precision: 0.91437,		val mean reciprocal rank: 0.96000,		train mean loss: 722.88550,		train mean average precision: 0.90643,		train mean reciprocal rank: 1.00000,		time: 343.12
+2020-05-24 07:52:47,193 - INFO: epoch:	79,		val mean loss: 717.51898,		val mean average precision: 0.92484,		val mean reciprocal rank: 0.96000,		train mean loss: 721.91260,		train mean average precision: 0.91123,		train mean reciprocal rank: 1.00000,		time: 459.83
+2020-05-24 08:00:45,857 - INFO: epoch:	80,		val mean loss: 716.32977,		val mean average precision: 0.92534,		val mean reciprocal rank: 0.96000,		train mean loss: 720.15350,		train mean average precision: 0.91752,		train mean reciprocal rank: 1.00000,		time: 478.66
+2020-05-24 08:08:47,812 - INFO: epoch:	81,		val mean loss: 716.57513,		val mean average precision: 0.92334,		val mean reciprocal rank: 0.96000,		train mean loss: 719.02075,		train mean average precision: 0.92009,		train mean reciprocal rank: 1.00000,		time: 481.95
+2020-05-24 08:16:35,626 - INFO: epoch:	82,		val mean loss: 713.97131,		val mean average precision: 0.93074,		val mean reciprocal rank: 0.96000,		train mean loss: 718.12299,		train mean average precision: 0.92392,		train mean reciprocal rank: 1.00000,		time: 467.81
+2020-05-24 08:22:51,013 - INFO: epoch:	83,		val mean loss: 712.72821,		val mean average precision: 0.93942,		val mean reciprocal rank: 0.97000,		train mean loss: 716.41095,		train mean average precision: 0.92918,		train mean reciprocal rank: 1.00000,		time: 375.38
+2020-05-24 08:28:34,911 - INFO: epoch:	84,		val mean loss: 710.92010,		val mean average precision: 0.94275,		val mean reciprocal rank: 0.98000,		train mean loss: 714.57697,		train mean average precision: 0.93600,		train mean reciprocal rank: 1.00000,		time: 343.89
+2020-05-24 08:34:42,723 - INFO: epoch:	85,		val mean loss: 711.11017,		val mean average precision: 0.94315,		val mean reciprocal rank: 0.98000,		train mean loss: 713.61523,		train mean average precision: 0.94030,		train mean reciprocal rank: 1.00000,		time: 367.81
+2020-05-24 08:42:17,796 - INFO: epoch:	86,		val mean loss: 709.86383,		val mean average precision: 0.94073,		val mean reciprocal rank: 0.98000,		train mean loss: 713.45251,		train mean average precision: 0.94156,		train mean reciprocal rank: 1.00000,		time: 455.06
+2020-05-24 08:50:20,864 - INFO: epoch:	87,		val mean loss: 709.88525,		val mean average precision: 0.94370,		val mean reciprocal rank: 0.98000,		train mean loss: 712.17432,		train mean average precision: 0.94348,		train mean reciprocal rank: 1.00000,		time: 483.06
+2020-05-24 08:59:18,972 - INFO: epoch:	88,		val mean loss: 708.48804,		val mean average precision: 0.94886,		val mean reciprocal rank: 0.98000,		train mean loss: 711.17853,		train mean average precision: 0.94720,		train mean reciprocal rank: 1.00000,		time: 538.10
+2020-05-24 09:07:16,090 - INFO: epoch:	89,		val mean loss: 707.49304,		val mean average precision: 0.95030,		val mean reciprocal rank: 0.98000,		train mean loss: 710.49701,		train mean average precision: 0.94840,		train mean reciprocal rank: 1.00000,		time: 477.11
+2020-05-24 09:13:34,889 - INFO: epoch:	90,		val mean loss: 706.44342,		val mean average precision: 0.95378,		val mean reciprocal rank: 0.98000,		train mean loss: 709.45630,		train mean average precision: 0.95022,		train mean reciprocal rank: 1.00000,		time: 378.80
+2020-05-24 09:19:39,035 - INFO: epoch:	91,		val mean loss: 705.92712,		val mean average precision: 0.95612,		val mean reciprocal rank: 0.98000,		train mean loss: 708.44159,		train mean average precision: 0.95357,		train mean reciprocal rank: 1.00000,		time: 364.15
+2020-05-24 09:25:53,195 - INFO: epoch:	92,		val mean loss: 705.19336,		val mean average precision: 0.96070,		val mean reciprocal rank: 0.99000,		train mean loss: 706.88702,		train mean average precision: 0.96077,		train mean reciprocal rank: 1.00000,		time: 374.16
+2020-05-24 09:33:48,043 - INFO: epoch:	93,		val mean loss: 705.82196,		val mean average precision: 0.95556,		val mean reciprocal rank: 0.99000,		train mean loss: 706.85425,		train mean average precision: 0.96069,		train mean reciprocal rank: 1.00000,		time: 474.85
+2020-05-24 09:41:46,321 - INFO: epoch:	94,		val mean loss: 704.04462,		val mean average precision: 0.96378,		val mean reciprocal rank: 1.00000,		train mean loss: 705.92578,		train mean average precision: 0.96308,		train mean reciprocal rank: 1.00000,		time: 478.27
+2020-05-24 09:50:16,417 - INFO: epoch:	95,		val mean loss: 705.57886,		val mean average precision: 0.95778,		val mean reciprocal rank: 0.98000,		train mean loss: 705.18744,		train mean average precision: 0.96578,		train mean reciprocal rank: 1.00000,		time: 510.09
+2020-05-24 09:57:12,741 - INFO: epoch:	96,		val mean loss: 703.01001,		val mean average precision: 0.96332,		val mean reciprocal rank: 1.00000,		train mean loss: 704.79401,		train mean average precision: 0.96647,		train mean reciprocal rank: 1.00000,		time: 416.32
+2020-05-24 10:03:55,024 - INFO: epoch:	97,		val mean loss: 703.21014,		val mean average precision: 0.96352,		val mean reciprocal rank: 0.99000,		train mean loss: 704.44836,		train mean average precision: 0.96597,		train mean reciprocal rank: 1.00000,		time: 402.28
+2020-05-24 10:10:59,148 - INFO: epoch:	98,		val mean loss: 702.50720,		val mean average precision: 0.96562,		val mean reciprocal rank: 0.99000,		train mean loss: 704.95099,		train mean average precision: 0.96341,		train mean reciprocal rank: 1.00000,		time: 424.12
+2020-05-24 10:19:26,861 - INFO: epoch:	99,		val mean loss: 701.47601,		val mean average precision: 0.97283,		val mean reciprocal rank: 1.00000,		train mean loss: 704.19849,		train mean average precision: 0.96534,		train mean reciprocal rank: 1.00000,		time: 507.71
+2020-05-24 10:27:35,009 - INFO: epoch:	100,		val mean loss: 701.02985,		val mean average precision: 0.97316,		val mean reciprocal rank: 1.00000,		train mean loss: 701.88495,		train mean average precision: 0.97545,		train mean reciprocal rank: 1.00000,		time: 488.15
+2020-05-24 10:34:50,869 - INFO: epoch:	101,		val mean loss: 700.50995,		val mean average precision: 0.97340,		val mean reciprocal rank: 1.00000,		train mean loss: 701.27625,		train mean average precision: 0.97652,		train mean reciprocal rank: 1.00000,		time: 435.86
+2020-05-24 10:39:47,537 - INFO: epoch:	102,		val mean loss: 700.18579,		val mean average precision: 0.97271,		val mean reciprocal rank: 0.99000,		train mean loss: 700.99359,		train mean average precision: 0.97711,		train mean reciprocal rank: 1.00000,		time: 296.67
+2020-05-24 10:44:51,535 - INFO: epoch:	103,		val mean loss: 699.39148,		val mean average precision: 0.97312,		val mean reciprocal rank: 1.00000,		train mean loss: 700.69745,		train mean average precision: 0.97804,		train mean reciprocal rank: 1.00000,		time: 303.99
+2020-05-24 10:49:41,018 - INFO: epoch:	104,		val mean loss: 699.78229,		val mean average precision: 0.97688,		val mean reciprocal rank: 1.00000,		train mean loss: 700.76959,		train mean average precision: 0.97595,		train mean reciprocal rank: 1.00000,		time: 289.48
+2020-05-24 10:55:10,917 - INFO: epoch:	105,		val mean loss: 699.25049,		val mean average precision: 0.97153,		val mean reciprocal rank: 1.00000,		train mean loss: 700.06671,		train mean average precision: 0.97950,		train mean reciprocal rank: 1.00000,		time: 329.90
+2020-05-24 11:01:45,309 - INFO: epoch:	106,		val mean loss: 698.42725,		val mean average precision: 0.97559,		val mean reciprocal rank: 1.00000,		train mean loss: 699.89697,		train mean average precision: 0.97883,		train mean reciprocal rank: 1.00000,		time: 394.39
+2020-05-24 11:07:43,251 - INFO: epoch:	107,		val mean loss: 697.95142,		val mean average precision: 0.97944,		val mean reciprocal rank: 1.00000,		train mean loss: 699.82611,		train mean average precision: 0.97751,		train mean reciprocal rank: 1.00000,		time: 357.94
+2020-05-24 11:13:23,666 - INFO: epoch:	108,		val mean loss: 697.27985,		val mean average precision: 0.97842,		val mean reciprocal rank: 1.00000,		train mean loss: 698.70038,		train mean average precision: 0.98291,		train mean reciprocal rank: 1.00000,		time: 340.41
+2020-05-24 11:18:54,951 - INFO: epoch:	109,		val mean loss: 698.27258,		val mean average precision: 0.97517,		val mean reciprocal rank: 1.00000,		train mean loss: 698.65686,		train mean average precision: 0.98019,		train mean reciprocal rank: 1.00000,		time: 331.28
+2020-05-24 11:23:13,188 - INFO: epoch:	110,		val mean loss: 697.83966,		val mean average precision: 0.97646,		val mean reciprocal rank: 1.00000,		train mean loss: 699.02875,		train mean average precision: 0.97966,		train mean reciprocal rank: 1.00000,		time: 258.24
+2020-05-24 11:26:46,837 - INFO: epoch:	111,		val mean loss: 695.99127,		val mean average precision: 0.98210,		val mean reciprocal rank: 1.00000,		train mean loss: 698.15619,		train mean average precision: 0.97989,		train mean reciprocal rank: 1.00000,		time: 213.65
+2020-05-24 11:30:39,633 - INFO: epoch:	112,		val mean loss: 696.48468,		val mean average precision: 0.97925,		val mean reciprocal rank: 1.00000,		train mean loss: 696.96533,		train mean average precision: 0.98484,		train mean reciprocal rank: 1.00000,		time: 232.79
+2020-05-24 11:34:33,027 - INFO: epoch:	113,		val mean loss: 695.81952,		val mean average precision: 0.98330,		val mean reciprocal rank: 1.00000,		train mean loss: 697.10602,		train mean average precision: 0.98423,		train mean reciprocal rank: 1.00000,		time: 233.39
+2020-05-24 11:39:05,446 - INFO: epoch:	114,		val mean loss: 696.51562,		val mean average precision: 0.97892,		val mean reciprocal rank: 1.00000,		train mean loss: 696.23993,		train mean average precision: 0.98661,		train mean reciprocal rank: 1.00000,		time: 272.41
+2020-05-24 11:43:46,321 - INFO: epoch:	115,		val mean loss: 695.54028,		val mean average precision: 0.98122,		val mean reciprocal rank: 1.00000,		train mean loss: 696.02271,		train mean average precision: 0.98632,		train mean reciprocal rank: 1.00000,		time: 280.87
+2020-05-24 11:48:40,693 - INFO: epoch:	116,		val mean loss: 694.62500,		val mean average precision: 0.98430,		val mean reciprocal rank: 1.00000,		train mean loss: 695.64166,		train mean average precision: 0.98698,		train mean reciprocal rank: 1.00000,		time: 294.37
+2020-05-24 11:52:43,029 - INFO: epoch:	117,		val mean loss: 694.51398,		val mean average precision: 0.98596,		val mean reciprocal rank: 1.00000,		train mean loss: 694.62964,		train mean average precision: 0.98931,		train mean reciprocal rank: 1.00000,		time: 242.34
+2020-05-24 11:57:06,688 - INFO: epoch:	118,		val mean loss: 694.04779,		val mean average precision: 0.98318,		val mean reciprocal rank: 1.00000,		train mean loss: 694.67560,		train mean average precision: 0.98957,		train mean reciprocal rank: 1.00000,		time: 263.66
+2020-05-24 12:01:12,372 - INFO: epoch:	119,		val mean loss: 694.44720,		val mean average precision: 0.98256,		val mean reciprocal rank: 1.00000,		train mean loss: 695.32593,		train mean average precision: 0.98682,		train mean reciprocal rank: 1.00000,		time: 245.68
+2020-05-24 12:05:44,965 - INFO: epoch:	120,		val mean loss: 693.99298,		val mean average precision: 0.98382,		val mean reciprocal rank: 1.00000,		train mean loss: 695.03204,		train mean average precision: 0.98747,		train mean reciprocal rank: 1.00000,		time: 272.59
+2020-05-24 12:12:28,449 - INFO: epoch:	121,		val mean loss: 693.83307,		val mean average precision: 0.98441,		val mean reciprocal rank: 1.00000,		train mean loss: 695.25421,		train mean average precision: 0.98620,		train mean reciprocal rank: 1.00000,		time: 403.48
+2020-05-24 12:19:53,865 - INFO: epoch:	122,		val mean loss: 693.62592,		val mean average precision: 0.98388,		val mean reciprocal rank: 1.00000,		train mean loss: 695.26196,		train mean average precision: 0.98577,		train mean reciprocal rank: 1.00000,		time: 445.41
+2020-05-24 12:25:44,303 - INFO: epoch:	123,		val mean loss: 693.39392,		val mean average precision: 0.98387,		val mean reciprocal rank: 1.00000,		train mean loss: 695.96228,		train mean average precision: 0.98271,		train mean reciprocal rank: 1.00000,		time: 350.43
+2020-05-24 12:31:14,458 - INFO: epoch:	124,		val mean loss: 693.04102,		val mean average precision: 0.98391,		val mean reciprocal rank: 1.00000,		train mean loss: 694.27100,		train mean average precision: 0.98749,		train mean reciprocal rank: 1.00000,		time: 330.15
+2020-05-24 12:36:48,218 - INFO: epoch:	125,		val mean loss: 693.10229,		val mean average precision: 0.98334,		val mean reciprocal rank: 1.00000,		train mean loss: 693.44830,		train mean average precision: 0.98948,		train mean reciprocal rank: 1.00000,		time: 333.75
+2020-05-24 12:43:11,999 - INFO: epoch:	126,		val mean loss: 692.51831,		val mean average precision: 0.98519,		val mean reciprocal rank: 1.00000,		train mean loss: 693.21735,		train mean average precision: 0.99006,		train mean reciprocal rank: 1.00000,		time: 383.78
+2020-05-24 12:49:47,328 - INFO: epoch:	127,		val mean loss: 691.45728,		val mean average precision: 0.98906,		val mean reciprocal rank: 1.00000,		train mean loss: 692.41565,		train mean average precision: 0.99089,		train mean reciprocal rank: 1.00000,		time: 395.31
+2020-05-24 12:56:15,520 - INFO: epoch:	128,		val mean loss: 691.85260,		val mean average precision: 0.98528,		val mean reciprocal rank: 1.00000,		train mean loss: 692.47913,		train mean average precision: 0.99050,		train mean reciprocal rank: 1.00000,		time: 388.19
+2020-05-24 13:01:57,741 - INFO: epoch:	129,		val mean loss: 692.32568,		val mean average precision: 0.98486,		val mean reciprocal rank: 1.00000,		train mean loss: 692.50232,		train mean average precision: 0.99063,		train mean reciprocal rank: 1.00000,		time: 342.21
+2020-05-24 13:07:51,119 - INFO: epoch:	130,		val mean loss: 692.27936,		val mean average precision: 0.98499,		val mean reciprocal rank: 1.00000,		train mean loss: 692.34314,		train mean average precision: 0.99082,		train mean reciprocal rank: 1.00000,		time: 353.37
+2020-05-24 13:13:33,457 - INFO: epoch:	131,		val mean loss: 692.20648,		val mean average precision: 0.98434,		val mean reciprocal rank: 1.00000,		train mean loss: 692.20111,		train mean average precision: 0.99101,		train mean reciprocal rank: 1.00000,		time: 342.33
+2020-05-24 13:20:51,797 - INFO: epoch:	132,		val mean loss: 692.02313,		val mean average precision: 0.98506,		val mean reciprocal rank: 1.00000,		train mean loss: 691.94446,		train mean average precision: 0.99167,		train mean reciprocal rank: 1.00000,		time: 438.34
+2020-05-24 13:28:11,274 - INFO: epoch:	133,		val mean loss: 691.96838,		val mean average precision: 0.98984,		val mean reciprocal rank: 1.00000,		train mean loss: 691.35748,		train mean average precision: 0.99222,		train mean reciprocal rank: 1.00000,		time: 439.48
+2020-05-24 13:34:53,993 - INFO: epoch:	134,		val mean loss: 692.00024,		val mean average precision: 0.98977,		val mean reciprocal rank: 1.00000,		train mean loss: 692.61841,		train mean average precision: 0.99028,		train mean reciprocal rank: 1.00000,		time: 402.71
+2020-05-24 13:42:24,396 - INFO: epoch:	135,		val mean loss: 691.29242,		val mean average precision: 0.98675,		val mean reciprocal rank: 1.00000,		train mean loss: 692.12415,		train mean average precision: 0.99123,		train mean reciprocal rank: 1.00000,		time: 450.40
+2020-05-24 13:50:07,268 - INFO: epoch:	136,		val mean loss: 690.34741,		val mean average precision: 0.99137,		val mean reciprocal rank: 1.00000,		train mean loss: 691.23651,		train mean average precision: 0.99185,		train mean reciprocal rank: 1.00000,		time: 462.87
+2020-05-24 13:55:46,272 - INFO: epoch:	137,		val mean loss: 691.13196,		val mean average precision: 0.99233,		val mean reciprocal rank: 1.00000,		train mean loss: 690.26843,		train mean average precision: 0.99307,		train mean reciprocal rank: 1.00000,		time: 339.00
+2020-05-24 14:01:55,682 - INFO: epoch:	138,		val mean loss: 691.26025,		val mean average precision: 0.99012,		val mean reciprocal rank: 1.00000,		train mean loss: 691.46930,		train mean average precision: 0.99154,		train mean reciprocal rank: 1.00000,		time: 369.40
+2020-05-24 14:08:03,123 - INFO: epoch:	139,		val mean loss: 691.57202,		val mean average precision: 0.98999,		val mean reciprocal rank: 1.00000,		train mean loss: 690.94940,		train mean average precision: 0.99231,		train mean reciprocal rank: 1.00000,		time: 367.43
+2020-05-24 14:14:55,730 - INFO: epoch:	140,		val mean loss: 689.81757,		val mean average precision: 0.99314,		val mean reciprocal rank: 1.00000,		train mean loss: 691.05328,		train mean average precision: 0.99187,		train mean reciprocal rank: 1.00000,		time: 412.60
+2020-05-24 14:21:58,172 - INFO: epoch:	141,		val mean loss: 690.03595,		val mean average precision: 0.99260,		val mean reciprocal rank: 1.00000,		train mean loss: 689.94781,		train mean average precision: 0.99330,		train mean reciprocal rank: 1.00000,		time: 422.44
+2020-05-24 14:29:11,339 - INFO: epoch:	142,		val mean loss: 689.44336,		val mean average precision: 0.99213,		val mean reciprocal rank: 1.00000,		train mean loss: 690.27625,		train mean average precision: 0.99305,		train mean reciprocal rank: 1.00000,		time: 433.16
+2020-05-24 14:36:13,412 - INFO: epoch:	143,		val mean loss: 690.27838,		val mean average precision: 0.99395,		val mean reciprocal rank: 1.00000,		train mean loss: 690.17261,		train mean average precision: 0.99243,		train mean reciprocal rank: 1.00000,		time: 422.07
+2020-05-24 14:42:56,609 - INFO: epoch:	144,		val mean loss: 691.17163,		val mean average precision: 0.98824,		val mean reciprocal rank: 1.00000,		train mean loss: 690.37421,		train mean average precision: 0.99317,		train mean reciprocal rank: 1.00000,		time: 403.19
+2020-05-24 14:42:56,615 - INFO: Early stopping
+2020-05-24 14:42:56,793 - INFO: Model saved in file: ./checkpoints/clevr_0.0.ckpt
+2020-05-24 14:45:17,504 - INFO: average precision at k: 
+[1.         1.         1.         0.995      0.996      0.99666667
+ 0.99428571 0.995      0.99333333 0.992      0.98909091 0.98833333
+ 0.98461538 0.98428571 0.984      0.98125    0.98117647 0.98111111
+ 0.97789474 0.967      0.93904762 0.90090909 0.86521739 0.83166667
+ 0.7992     0.76846154 0.74074074 0.71428571 0.68965517 0.66666667
+ 0.64516129 0.625      0.60606061 0.58823529 0.57142857 0.55555556
+ 0.54054054 0.52631579 0.51282051 0.5        0.48780488 0.47619048
+ 0.46511628 0.45454545 0.44444444 0.43478261 0.42553191 0.41666667
+ 0.40816327 0.4        0.39215686 0.38461538 0.37735849 0.37037037
+ 0.36363636 0.35714286 0.35087719 0.34482759 0.33898305 0.33333333
+ 0.32786885 0.32258065 0.31746032 0.3125     0.30769231 0.3030303
+ 0.29850746 0.29411765 0.28985507 0.28571429 0.28169014 0.27777778
+ 0.2739726  0.27027027 0.26666667 0.26315789 0.25974026 0.25641026
+ 0.25316456 0.25       0.24691358 0.24390244 0.24096386 0.23809524
+ 0.23529412 0.23255814 0.22988506 0.22727273 0.2247191  0.22222222
+ 0.21978022 0.2173913  0.21505376 0.21276596 0.21052632 0.20833333
+ 0.20618557 0.20408163 0.2020202  0.2       ]
+2020-05-24 14:45:17,504 - INFO: Average precision: 
+[1.0, 1.0, 1.0, 1.0, 1.0, 0.9728925986723974, 0.9976190476190476, 0.9703360610071641, 1.0, 1.0, 0.9976190476190476, 1.0, 1.0, 1.0, 0.9473749219047205, 1.0, 0.9929545454545454, 0.9976190476190476, 1.0, 0.9951190476190476, 0.9951190476190476, 1.0, 1.0, 1.0, 0.9681621479636856, 1.0, 0.9976190476190476, 0.9976190476190476, 1.0, 0.9687259320057306, 0.9880610617452723, 0.9976190476190476, 0.9976190476190476, 1.0, 0.9954545454545455, 1.0, 0.9134413929275282, 1.0, 1.0, 1.0, 0.9745742503540491, 1.0, 1.0, 1.0, 0.9768875620423607, 0.986768514423313, 0.9119777980304296, 0.9795027276738306, 0.9951190476190476, 0.919734229264028]
+2020-05-24 14:45:17,505 - INFO: Reciprocal rank: 
+[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+2020-05-24 14:45:17,505 - INFO: test mean loss: 691.94031,		test mean average precision: 0.98871,		test mean reciprocal rank: 1.00000,
