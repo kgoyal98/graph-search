@@ -6,11 +6,22 @@ by Kunal Goyal, Utkarsh Gupta, Abir De and Soumen Chakrabarti
 
 ### Citation
 ```
-@inproceedings{,
-  title={},
-  author={},
-  booktitle={},
-  year={}
+@inproceedings{10.1145/3397271.3401216,
+author = {Goyal, Kunal and Gupta, Utkarsh and De, Abir and Chakrabarti, Soumen},
+title = {Deep Neural Matching Models for Graph Retrieval},
+year = {2020},
+isbn = {9781450380164},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3397271.3401216},
+doi = {10.1145/3397271.3401216},
+abstract = {Graph retrieval from a large corpus of graphs has a wide variety of applications, e.g., sentence retrieval using words and dependency parse trees for question answering, image retrieval using scene graphs, and molecule discovery from a set of existing molecular graphs. In such graph search applications, nodes, edges and associated features bear distinctive physical significance. Therefore, a unified, trainable search model that efficiently returns corpus graphs that are highly relevant to a query graph has immense potential impact. In this paper, we present an effective, feature and structure-aware, end-to-end trainable neural match scoring system for graphs. We achieve this by constructing the product graph between the query and a candidate graph in the corpus, and then conduct a family of random walks on the product graph, which are then aggregated into the match score, using a network whose parameters can be trained. Experiments show the efficacy of our method, compared to competitive baseline approaches.},
+booktitle = {Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval},
+pages = {1701–1704},
+numpages = {4},
+keywords = {product graph, random walk, scoring subgraph match, graph search},
+location = {Virtual Event, China},
+series = {SIGIR '20}
 }
 ```
 
